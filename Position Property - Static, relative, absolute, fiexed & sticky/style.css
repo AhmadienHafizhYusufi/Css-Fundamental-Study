@@ -1,0 +1,60 @@
+body {
+  position: relative;
+  margin: 0;
+  height: 4000px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.box-container {
+  position: relative;
+  display: flex;
+  outline: darkgray 3px solid;
+  font-size: 30px;
+  color: white;
+}
+
+.box-container > div {
+  outline: 1px grey dotted;
+  background: #e2e2e2;
+  height: 200px;
+  width: 200px;
+}
+
+#static-box {
+  background: red;
+  position: static;
+}
+
+#relative-box {
+  background: blue;
+  position: relative;
+  /* top: 20px; */
+  /* right: 20px; */
+}
+
+#absolute-box {
+  background: green;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#fixed-box {
+  background-color: purple;
+  position: fixed;
+  top: 50px;
+  left: 20px;
+}
+
+#sticky-box {
+  background-color: pink;
+}
+
+.stick {
+  position: sticky;
+  /* top: 0; */
+  top: 200px;
+}
